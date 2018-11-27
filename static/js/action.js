@@ -12,6 +12,13 @@ $(document).ready(function() {
   var formatoCuatro='';
   var formatoCinco='';
   var formatoSeis='';
+  var contadorAnalizar=0;
+  var graficoUno;
+  var graficoDos;
+  var graficoTres;
+  var graficoCuatro;
+  var graficoCinco;
+  var graficoSeis;
 
   $( "#btnFrase" ).click(function() {
     if (!$('#frase').val()){
@@ -104,7 +111,22 @@ $(document).ready(function() {
             });
       }
       else{
+        contadorAnalizar++;
+        if (contadorAnalizar > 1){
+
+          graficoUno.destroy();
+          graficoDos.destroy();
+          graficoTres.destroy();
+          graficoCuatro.destroy();
+          graficoCinco.destroy();
+          graficoSeis.destroy();
+          $('#zonaAnalisis').hide();
+
+        }
+
         $('#contactForm').fadeToggle();
+        //var context=popCanvas[0].getContext('2d');
+        //context.clearRect(0, 0, popChart.width, popChart.height);
         var values = $("#terminosAgregados>option").map(function() { return $(this).val(); });
         var typeFilter = $("#tipoDatos").val();
         var typeSearch = $("input[name='optradio']:checked").val();
@@ -148,12 +170,12 @@ $(document).ready(function() {
           });
           $('#zonaAnalisis').show();
           $('#contactForm').fadeToggle();
-          graficarPalabrasRepetidas(popCanvas,data.resultY1,data.resultX1);
-          graficarPalabrasRepetidasPie(popCanvasDos,data.resultY1,data.resultX1);
-          graficarHashtagRepetidos(popCanvasTres,data.resultY2,data.resultX2);
-          graficarHashtagRepetidosPie(popCanvasCuatro,data.resultY2,data.resultX2);
-          graficarHashtagPopularidad(popCanvasCinco,data.resultY3,data.resultX3,'pie');
-          graficaScatter(popCanvasSeis,dataT);
+          graficoUno=graficarPalabrasRepetidas(popCanvas,data.resultY1,data.resultX1);
+          graficoDos=graficarPalabrasRepetidasPie(popCanvasDos,data.resultY1,data.resultX1);
+          graficoTres=graficarHashtagRepetidos(popCanvasTres,data.resultY2,data.resultX2);
+          graficoCuatro=graficarHashtagRepetidosPie(popCanvasCuatro,data.resultY2,data.resultX2);
+          graficoCinco=graficarHashtagPopularidad(popCanvasCinco,data.resultY3,data.resultX3,'pie');
+          graficoSeis=graficaScatter(popCanvasSeis,dataT);
           values=[]
         }
   		  });
@@ -201,5 +223,11 @@ $(document).ready(function() {
       formatoSeis=$("#formatoSeis").val();
       download_image("popChartSeis",formatoSeis);
     });
+
+    $("#resetCanvas").click(function(){
+        //Used the [0] to select the correct element in canvas
+    context.clearRect(0,0, canvas[0].width, canvas[0].height);
+});
+
 
 });

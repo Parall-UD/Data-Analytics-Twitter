@@ -40,6 +40,7 @@ function graficarPalabrasRepetidas(canvas,data,labels){
 
     }
   });
+  return barChart;
 }
 
 function graficarPalabrasRepetidasPie(canvas,data,labels){
@@ -69,6 +70,7 @@ function graficarPalabrasRepetidasPie(canvas,data,labels){
 
     }
   });
+  return barChart;
 }
 
 function graficarHashtagRepetidos(canvas,data,labels){
@@ -116,6 +118,7 @@ function graficarHashtagRepetidos(canvas,data,labels){
         }
     }
   });
+  return barChart;
 }
 
 function graficarHashtagRepetidosPie(canvas,data,labels){
@@ -147,6 +150,7 @@ function graficarHashtagRepetidosPie(canvas,data,labels){
         }
     }
   });
+  return barChart;
 }
 
 function graficarHashtagPopularidad(canvas,data,labels,type){
@@ -170,6 +174,7 @@ function graficarHashtagPopularidad(canvas,data,labels,type){
         }
     }
   });
+  return barChart;
 }
 
 function graficaScatter(canvas,data) {
@@ -209,5 +214,5 @@ function graficaScatter(canvas,data) {
 
     }
   });
-
+  return scatterChart;
 }

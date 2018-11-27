@@ -48,6 +48,12 @@ label{
    text-align: right;
  }
 
+ #manualUsuario, #manualInstalacion{
+   padding-top: 10px;
+   width: 200px;
+   text-align: right;
+ }
+
 
  #dato{
    align=center;
