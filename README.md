@@ -13,3 +13,5 @@ El manual de usuario realizado para esta aplicación, tiene como finalidad prese
 
 El manual técnico realizado para esta aplicación, tiene como finalidad presentar el proceso de instalación con los componentes necesarios para poder ejecturar la aplicación. El manual técnico se encuentra disponible en la siguiente dirección : https://github.com/dataScienceAndres29/dataScienceTwitter/blob/master/static/manuales/ManualTecnicoDAT.pdf
 
+## Video Tutorial 
+Con el fin de presentar detalladamente el funcionamiento de la aplicación, se realizó un video tutorial donde se presenta la interacción entre el usuario y la plataforma. El video tutorial se encuentra disponible en la siguiente dirección: https://www.youtube.com/watch?time_continue=1&v=eQDvEYK5YPw
