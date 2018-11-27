@@ -69,7 +69,7 @@ def asignarPalabrasVac():
     palabrasvac += ['UN', 'UNA', 'UNAS', 'UNO', 'UNOS', 'USTED', 'VA']
     palabrasvac += ['VAMOS', 'VAN', 'VARIAS', 'VARIOS', 'VECES', 'VER']
     palabrasvac += ['VEZ', 'Y', 'YA', 'YO',')','(',',','.','#','@','TU','TÚ','TE','DO','TO', 'MI' , 'ME', 'DE', 'MÁS', 'MAS']
-    palabrasvac += ['THE', 'AND', 'OF', 'IN', 'IS', 'OUR', 'FOR']
+    palabrasvac += ['THE', 'AND', 'OF', 'IN', 'IS', 'OUR', 'FOR', 'A', 'E', 'I', 'O', 'U', '|','*','+', '-']
 
     return palabrasvac
 
@@ -98,7 +98,7 @@ def alistarTexto(dataframe):
     valorPos=int(funcLocText(dataframe))
     for r in range(dataframe['TEXT'].count()):
         cadenaPalabrasUno+=str(dataframe.iloc[r,valorPos])
-    cad=cadenaPalabrasUno.replace(",","").replace(".","").replace(":","").replace("#","").replace("@","")
+    cad=cadenaPalabrasUno.replace(",","").replace(".","").replace(":","").replace("#","").replace("@","").replace(";","").replace("!","").replace("?","")
     cadenaPalabras = cad.upper();
     cadenaPalabras = cadenaPalabras.replace("Á","A").replace("É","E").replace("Í","I").replace("Ó","O").replace("Ú","U")
     listaPalabras = cadenaPalabras.split()
