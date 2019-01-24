@@ -13,8 +13,12 @@ El manual de usuario realizado para esta aplicación, tiene como finalidad prese
 
 El manual técnico realizado para esta aplicación, tiene como finalidad presentar el proceso de instalación con los componentes necesarios para poder ejecturar la aplicación. El manual técnico se encuentra disponible en la siguiente dirección : https://github.com/dataScienceAndres29/dataScienceTwitter/blob/master/static/manuales/ManualTecnicoDAT.pdf
 
+## Especificación de Requisitos de Software
+
+Este documento es una Especificación de Requisitos Software (ERS) para el software llamado “Data Analytics Tweets (DAT)”. Esta especificación se ha estructurado basándose en las directrices dadas por el estándar IEEE Práctica Recomendada para Especificaciones de Requisitos Software ANSI/IEEE 830, 1998. Este documento se encuentra disponible en la siguiente dirección : https://github.com/dataScienceAndres29/dataScienceTwitter/blob/master/static/manuales/IEEE-830%20DAT.pdf
+
 ## Video Tutorial 
 Con el fin de presentar detalladamente el funcionamiento de la aplicación, se realizó un video tutorial donde se presenta la interacción entre el usuario y la plataforma. El video tutorial se encuentra disponible en la siguiente dirección: https://www.youtube.com/watch?time_continue=1&v=eQDvEYK5YPw
 
 ## Servidor de Prueba
-El servidor de Prueba se encuentra alojado en la siguiente dirección: 200.69.103.29:29599
+El servidor de Prueba se encuentra alojado en la siguiente dirección: http://200.69.103.29:29599
